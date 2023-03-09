@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      
+      <h1>Palo Santo</h1>
+      <h2>Organic Search Results Ranking</h2>
+    </header>
+    <main>
+      <form>
+        <label for="search"></label>
+        <input type="text" id="search" name="search" placeholder="Search..." />
+        <button type="submit">Go</button>
+        <button type="submit" id="export">Export</button>
+        <label for="ranking"></label>
+        <select id="ranking" name="ranking">
+          <option value="">All</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>URL</th>
+            <th>Organic Ranking</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="pagination">
+        <button class="prev-btn">&lt;</button>
+        <span class="page-num">Page 1 of 1</span>
+        <button class="next-btn">&gt;</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="'export.js"></script>
+  </body>
+</html>

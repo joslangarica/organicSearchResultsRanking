@@ -1,0 +1,166 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some default styles */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #fdfdfd;
+  color: #606060;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  margin: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #224e6b;
+  color: #fff;
+  font-weight: normal;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th:first-child {
+  width: 50%;
+}
+
+th:last-child {
+  width: 10%;
+}
+
+td {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-right: .5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  }
+  
+  button[type="submit"],
+  select {
+  background-color: #288b7c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  }
+  
+  button[type="submit"]:hover,
+  select:hover {
+  background-color: #444;
+  }
+  
+  select {
+  border-radius: 0.25rem;
+  }
+  
+  .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  }
+  
+  .pagination button,
+  .page-num {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  }
+  
+  .pagination button:hover,
+  .page-num:hover {
+  background-color: #444;
+  }
+  
+  .prev-btn,
+  .next-btn {
+  font-size: 1.5rem;
+  }
+  
+  .page-num {
+  margin: 0 1rem;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+  main {
+  margin: 1rem;
+  }
+  
+  form {
+  margin-bottom: 1rem;
+  }
+  
+  input[type="text"] {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  margin-right: 0;
+  }
+  
+  select {
+  flex-basis: calc(50% - 0.5rem);
+  margin-bottom: 1rem;
+  }
+  
+  button[type="submit"] {
+  flex-basis: calc(50% - 0.5rem);
+  }
+  
+  .pagination {
+  margin-top: 1rem;
+  }
+
+  
+
+
+  }
+
