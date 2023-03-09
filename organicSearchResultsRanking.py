@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 driver.get('https://www.google.com/')
 
 #Make the search query a variable to make it easier to change
-query = 'Quantum Consciousness'
+query = 'Best Hotels in Singapore'
 
 #Wait for the search input field to become visible
 search_input = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, 'q')))
@@ -22,7 +22,7 @@ search_input.submit()
 json_list = []
 
 #Loop through the first 3 pages of search results
-for i in range(15):
+for i in range(3):
     #Find all the search results
     results = driver.find_elements(By.CSS_SELECTOR, 'div.g')
 
@@ -54,7 +54,8 @@ for i in range(15):
 
 # Save the results in a JSON file with a timestamp
 timestamp = time.strftime("%Y-%m-%d %H-%M-%S")
-filename = query + '_' + timestamp + '_organic_ranking.json'
+#filename = query + '_' + timestamp + '.json'
+filename = 'results' + '.json'
 with open(filename, 'w') as fp:
     json.dump(json_list, fp, indent=4)
 
